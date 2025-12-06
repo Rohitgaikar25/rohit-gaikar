@@ -26,7 +26,7 @@
             font-family: 'Poppins', sans-serif;
             background-color: var(--primary);
             color: var(--text-primary);
-            line-height: 1.6;
+            line-height: 1.5;
             overflow-x: hidden;
         }
         
@@ -229,8 +229,8 @@
             color: var(--text-secondary);
         }
 
-	.key-highlight {
-		color: var(--accent);
+        .key-highlight {
+            color: var(--accent);
         }
         
         .skills-list {
@@ -551,8 +551,10 @@
         <div class="container">
             <div class="hero-content">
                 <h1>Rohit Gaikar</h1>
-                <h2>Cybersecurity Analyst | IAM Specialist</h2>
-                <p>Over 3.5 years of hands-on experience in Security Information and Event Management (SIEM), User and Entity Behavior Analytics (UEBA), and Identity & Access Management (IAM), with a proven track record in implementing secure, scalable, and compliant cybersecurity solutions.</p>
+                <h2>Cybersecurity Analyst | IAM & PAM Specialist</h2>
+                <p>
+                    Over 3.5 years of hands-on experience in Security Information and Event Management (SIEM), User and Entity Behavior Analytics (UEBA), Identity & Access Management (IAM), and Privileged Access Management (PAM), with a proven track record in implementing secure, scalable, and compliant cybersecurity solutions.
+                </p>
                 <a href="#contact" class="btn">Get In Touch</a>
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/rohit-gaikar-936500169/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
@@ -569,11 +571,12 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-			<p>I am a versatile cybersecurity and IT professional with specialized skills in SIEM (Securonix), UEBA, and IAM. I focus on optimizing security frameworks, resolving technical issues efficiently, and aligning technology with business goals.</p>
+                    <p>I am a versatile cybersecurity and IT professional with specialized skills in SIEM (Securonix), UEBA, IAM, and PAM. I focus on optimizing security frameworks, resolving technical issues efficiently, and aligning technology with business goals.</p>
                     <p><strong class="key-highlight">Security Expertise:</strong> Skilled in monitoring SIEM/UEBA systems, analyzing security events, and performing root cause analysis to enhance threat detection. I support SOC teams in incident response, including investigation, containment, and remediation.</p>
                     <p><strong class="key-highlight">SIEM Management:</strong> Proficient in deploying and optimizing SIEM solutions—configuring correlation rules, alerts, dashboards, and log source integrations to ensure real-time visibility.</p>
                     <p><strong class="key-highlight">IAM & Infrastructure:</strong> Experienced in Active Directory, LDAP, SAML, OAuth, MFA, and RBAC, managing user access, authentication protocols, and enterprise IT solutions.</p>
-                    <p><strong class="key-highlight">Problem Solver:</strong> Adept at troubleshooting log ingestion, parsing errors, network/system issues, and maintaining system health to meet SLAs.</p>
+                    <p><strong class="key-highlight">PAM Implementation:</strong> Hands-on experience implementing ARCON PAM, including IIS and database configuration, onboarding critical devices and web applications, and automating SSO integrations using JSON-based configurations and APIs.</p>
+                    <p><strong class="key-highlight">Problem Solver:</strong> Adept at troubleshooting log ingestion, parsing errors, network/system issues, PAM/IAM integration challenges, and maintaining system health to meet SLAs.</p>
                     <p><strong class="key-highlight">Client & Team Collaboration:</strong> Strong ability to train clients on security best practices, document processes, and work with stakeholders to deliver compliant IT solutions.</p>
                     <p>With a focus on efficiency, security, and continuous improvement, I bridge the gap between technical operations and business needs to strengthen organizational resilience.</p>
                     <p>Here are a few technologies I've been working with recently:</p>
@@ -587,6 +590,7 @@
                         <li>Disaster Recovery</li>
                         <li>UEBA / SOAR</li>
                         <li>Technical Support</li>
+                        <li>Privileged Access Management (ARCON PAM)</li>
                     </ul>
                 </div>
             </div>
@@ -598,35 +602,61 @@
         <div class="container">
             <h2 class="section-title">Experience</h2>
             <div class="experience-tabs">
-                <button class="tab-btn active" data-tab="securonix">Securonix</button>
+                <button class="tab-btn active" data-tab="arcon">ARCON Solutions</button>
+                <button class="tab-btn" data-tab="securonix">Securonix</button>
                 <button class="tab-btn" data-tab="tcs">TCS</button>
             </div>
-            <div class="tab-content active" id="securonix">
-                <h3 class="job-title">Technical Support Engineer</h3>
-                <p class="job-company">Securonix</p>
-                <p class="job-duration">June 2024 - Present</p>
+
+            <!-- ARCON Solutions -->
+            <div class="tab-content active" id="arcon">
+                <h3 class="job-title">Implementation Engineer</h3>
+                <p class="job-company">ARCON Solutions</p>
+                <p class="job-duration">August 2025 - Present</p>
                 <div class="job-description">
                     <ul>
-                        <li>Diagnose and resolve technical issues related to SIEM and UEBA platforms (Securonix), ensuring high levels of client satisfaction through prompt support and clear communication.</li>
-                        <li>Monitor system health and analyze security events to detect threats, perform root cause analysis, and recommend improvements to strengthen overall security posture.</li>
-                        <li>Collaborate with SOC teams and stakeholders during incident response, assisting in investigation, containment, and remediation of security incidents.</li>
-                        <li>Deploy and configure SIEM solutions including correlation rules, alerts, dashboards, and data integrations to enhance threat detection and improve operational efficiency.</li>
-                        <li>Troubleshoot log ingestion pipelines and optimize parsing processes to ensure accurate and comprehensive data visibility.</li>
-                        <li>Develop and maintain technical documentation such as knowledge base articles and SOPs, improving internal efficiency and client support.</li>
+                        <li>Implement ARCON Privileged Access Management (PAM) solutions for enterprise clients, covering end-to-end deployment, configuration, and go-live support.</li>
+                        <li>Configure IIS, application servers, and backend databases to support highly available and secure ARCON PAM architectures.</li>
+                        <li>Onboard critical servers, databases, network devices, and web applications into ARCON PAM with appropriate access policies and workflows.</li>
+                        <li>Design and implement SSO integrations for web applications and browsers using JSON-based configuration, APIs, and standard protocols such as SAML and OAuth.</li>
+                        <li>Set up MFA and strong authentication controls within PAM for privileged users, ensuring compliance with organizational and regulatory requirements.</li>
+                        <li>Perform sanity testing, functional validation, and UAT support to ensure stable and secure PAM deployments.</li>
+                        <li>Collaborate with EMEA and global clients, driving workshops, requirement gathering, and technical discussions while communicating effectively with internal and external stakeholders.</li>
+                        <li>Document implementation designs, runbooks, and SOPs to streamline future deployments and ongoing operations.</li>
                     </ul>
                 </div>
             </div>
+
+            <!-- Securonix -->
+            <div class="tab-content" id="securonix">
+                <h3 class="job-title">Technical Support Engineer</h3>
+                <p class="job-company">Securonix</p>
+                <p class="job-duration">June 2024 - August 2025</p>
+                <div class="job-description">
+                    <ul>
+                        <li>Diagnosed and resolved technical issues related to SIEM and UEBA platforms (Securonix), ensuring high levels of client satisfaction through prompt support and clear communication.</li>
+                        <li>Monitored system health and analyzed security events to detect threats, perform root cause analysis, and recommend improvements to strengthen overall security posture.</li>
+                        <li>Collaborated with SOC teams and stakeholders during incident response, assisting in investigation, containment, and remediation of security incidents.</li>
+                        <li>Deployed and configured SIEM solutions including correlation rules, alerts, dashboards, and data integrations to enhance threat detection and improve operational efficiency.</li>
+                        <li>Troubleshot log ingestion pipelines and optimized parsing processes to ensure accurate and comprehensive data visibility.</li>
+                        <li>Developed and maintained technical documentation such as knowledge base articles and SOPs, improving internal efficiency and client support.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- TCS -->
             <div class="tab-content" id="tcs">
                 <h3 class="job-title">System Engineer</h3>
                 <p class="job-company">Tata Consultancy Services (Client: Reserve Bank of India DC)</p>
                 <p class="job-duration">September 2021 - June 2024</p>
                 <div class="job-description">
                     <ul>
-                        <li>Led Identity and Access Management (IAM) operations, including end-to-end user lifecycle management (onboarding, offboarding, role modifications), role-based access control (RBAC), and multi-factor authentication (MFA) deployment to enforce security best practices.</li>
-                        <li>Implemented authentication protocols such as LDAP, SAML, OAuth, WS-Fed, and Kerberos, significantly enhancing the organization's security posture.</li>
-                        <li>Integrated and maintained enterprise applications within IAM platforms, ensuring adherence to least privilege principles and compliance with industry standards.</li>
-                        <li>Spearheaded the deployment and support of critical IT infrastructure, facilitating seamless application and data migration across enterprise environments.</li>
-                        <li>Provided technical support for identity, server, and access-related issues, collaborating with cross-functional teams to deliver timely solutions.</li>
+                        <li>Led Identity and Access Management (IAM) and Privileged Access Management (PAM) operations, including end-to-end user lifecycle management, role-based access control (RBAC), and multi-factor authentication (MFA) deployment.</li>
+                        <li>Implemented and administered ARCON PAM, including IIS and database configuration, policy setup, and integration with enterprise applications to control and monitor privileged sessions.</li>
+                        <li>Configured and maintained SSO integrations with ARCON PAM for web applications and browsers, leveraging JSON-based configurations and APIs to streamline authentication flows.</li>
+                        <li>Onboarded servers, databases, network devices, and critical applications into ARCON PAM, performing sanity testing and validation to ensure secure and reliable privileged access.</li>
+                        <li>Implemented authentication protocols such as LDAP, SAML, OAuth, WS-Fed, and Kerberos to enhance secure access across enterprise systems.</li>
+                        <li>Handled day-to-day PAM and IAM operations for EMEA clients, communicating effectively with internal teams and external stakeholders to resolve issues and deliver enhancements.</li>
+                        <li>Provided technical support for identity, server, and access-related issues, collaborating with cross-functional teams to deliver timely, compliant solutions.</li>
                     </ul>
                 </div>
             </div>
@@ -638,39 +668,52 @@
         <div class="container">
             <h2 class="section-title">Certifications</h2>
             <div class="certifications-grid">
+
+                <div class="certification-card">
+                    <h3>ARCON | PAM - Administrator</h3>
+                    <p>Administrator-level certification in ARCON Privileged Access Management, covering deployment, configuration, and operational management of privileged access environments.</p>
+                    <p class="date">[Month Year]</p>
+                </div>
+
+                <div class="certification-card">
+                    <h3>ARCON | PAM - Professional</h3>
+                    <p>Professional-level certification in ARCON PAM, focusing on advanced policies, integrations, and secure operations for privileged identities and sessions.</p>
+                    <p class="date">[Month Year]</p>
+                </div>
+
                 <div class="certification-card">
                     <h3>Unified Defense SIEM (UDS) Cyber Defense Analyst</h3>
-                    <p>Securonix SIEM platform in-depth expertise in Content Management, Incident Management and SIEM Operations.</p>
+                    <p>Securonix SIEM platform in-depth expertise in content management, incident management, and SIEM operations.</p>
                     <p class="date">July 2024</p>
                 </div>
                 <div class="certification-card">
                     <h3>Unified Defense SIEM (UDS) SaaS Admin</h3>
-                    <p>Depth knowlegde of Data Ingestion and Device Integrations on Securonix SIEM solutions to enhance visibility and manage effectively.</p>
+                    <p>In-depth knowledge of data ingestion and device integrations on Securonix SIEM solutions to enhance visibility and manage effectively.</p>
                     <p class="date">July 2024</p>
                 </div>
                 <div class="certification-card">
                     <h3>Securonix Administrator</h3>
-                    <p>Securonix SIEM platform administration and management</p>
+                    <p>Securonix SIEM platform administration and management.</p>
                     <p class="date">July 2024</p>
                 </div>
                 <div class="certification-card">
                     <h3>Securonix Content Developer</h3>
-                    <p>Developing custom content for Securonix SIEM platform</p>
+                    <p>Developing custom content for Securonix SIEM platform.</p>
                     <p class="date">July 2024</p>
                 </div>
                 <div class="certification-card">
                     <h3>Microsoft Azure Identity and Access Administrator (SC-300)</h3>
-                    <p>Microsoft certified identity and access management in Azure</p>
+                    <p>Microsoft certified identity and access management in Azure.</p>
                     <p class="date">December 2023</p>
                 </div>
                 <div class="certification-card">
                     <h3>Microsoft Azure Administrator Associate (AZ-104)</h3>
-                    <p>Microsoft certified Azure administration</p>
+                    <p>Microsoft certified Azure administration.</p>
                     <p class="date">April 2023</p>
                 </div>
                 <div class="certification-card">
                     <h3>Network Security</h3>
-                    <p>Open University certification in network security</p>
+                    <p>Open University certification in network security.</p>
                     <p class="date">November 2023</p>
                 </div>
             </div>
@@ -725,7 +768,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>Designed & Built by Rohit Gaikar</p>
+            <p>Designed &amp; Built by Rohit Gaikar</p>
         </div>
     </footer>
 
@@ -756,11 +799,9 @@
             btn.addEventListener('click', () => {
                 const tabId = btn.getAttribute('data-tab');
                 
-                // Remove active class from all buttons and contents
-                tabBtns.forEach(btn => btn.classList.remove('active'));
+                tabBtns.forEach(b => b.classList.remove('active'));
                 tabContents.forEach(content => content.classList.remove('active'));
                 
-                // Add active class to clicked button and corresponding content
                 btn.classList.add('active');
                 document.getElementById(tabId).classList.add('active');
             });
@@ -773,6 +814,7 @@
                 
                 const targetId = this.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
+                if (!targetElement) return;
                 
                 window.scrollTo({
                     top: targetElement.offsetTop - 80,
@@ -781,7 +823,7 @@
             });
         });
         
-        // Form submission with email functionality
+        // Form submission with email functionality (pattern inspired by typical Fetch + JSON forms) [web:4][web:20]
         const contactForm = document.getElementById('contactForm');
         const formStatus = document.getElementById('formStatus');
         
@@ -789,21 +831,19 @@
             contactForm.addEventListener('submit', function(e) {
                 e.preventDefault();
                 
-                // Get form values
                 const name = document.getElementById('name').value;
                 const email = document.getElementById('email').value;
                 const message = document.getElementById('message').value;
                 
-                // Show loading state
                 formStatus.textContent = 'Sending message...';
                 formStatus.className = 'form-status';
                 formStatus.style.display = 'block';
                 
-                // Using Formspree to handle form submission
                 fetch('https://formspree.io/f/myzjyznl', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
+                        'Accept': 'application/json'
                     },
                     body: JSON.stringify({
                         name: name,
@@ -815,7 +855,6 @@
                 })
                 .then(response => {
                     if (response.ok) {
-                        // Success message
                         formStatus.textContent = 'Thank you for your message! I will get back to you soon.';
                         formStatus.className = 'form-status success';
                         contactForm.reset();
@@ -824,7 +863,6 @@
                     }
                 })
                 .catch(error => {
-                    // Error message
                     formStatus.textContent = 'There was a problem sending your message. Please try again later or email me directly at rohitsgaikar25@gmail.com.';
                     formStatus.className = 'form-status error';
                     console.error('Error:', error);
@@ -832,7 +870,7 @@
             });
         }
 
-        // Add animation on scroll
+        // Add animation on scroll (common simple intersection-style reveal pattern) [web:18]
         const animateOnScroll = () => {
             const elements = document.querySelectorAll('section, .certification-card, .education-item');
             
@@ -847,14 +885,12 @@
             });
         };
 
-        // Set initial state for animation
         document.querySelectorAll('section, .certification-card, .education-item').forEach(element => {
             element.style.opacity = '0';
             element.style.transform = 'translateY(20px)';
             element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         });
 
-        // Run animation on load and scroll
         window.addEventListener('load', animateOnScroll);
         window.addEventListener('scroll', animateOnScroll);
     </script>
