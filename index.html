@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <style>
-        /* Global Styles */
         :root {
             --primary: #0a192f;
             --secondary: #172a45;
@@ -26,7 +25,7 @@
             font-family: 'Poppins', sans-serif;
             background-color: var(--primary);
             color: var(--text-primary);
-            line-height: 1.5;
+            line-height: 1.2;
             overflow-x: hidden;
         }
         
@@ -90,7 +89,6 @@
             transform: translateY(-3px);
         }
         
-        /* Header & Navigation */
         header {
             position: fixed;
             top: 0;
@@ -154,7 +152,6 @@
             color: var(--text-primary);
         }
         
-        /* Hero Section */
         #hero {
             height: 100vh;
             display: flex;
@@ -209,7 +206,6 @@
             transform: translateY(-3px);
         }
         
-        /* About Section */
         #about {
             background-color: var(--secondary);
         }
@@ -228,7 +224,7 @@
             margin-bottom: 20px;
             color: var(--text-secondary);
         }
-
+        
         .key-highlight {
             color: var(--accent);
         }
@@ -270,7 +266,6 @@
             filter: none;
         }
         
-        /* Experience Section */
         .experience-tabs {
             display: flex;
             margin-bottom: 30px;
@@ -340,7 +335,6 @@
             margin-bottom: 10px;
         }
         
-        /* Certifications Section */
         #certifications {
             background-color: var(--secondary);
         }
@@ -378,7 +372,6 @@
             color: var(--text-secondary);
         }
         
-        /* Education Section */
         .education-item {
             margin-bottom: 40px;
         }
@@ -403,7 +396,6 @@
             color: var(--text-secondary);
         }
         
-        /* Contact Section */
         #contact {
             background-color: var(--secondary);
             text-align: center;
@@ -450,28 +442,26 @@
             min-height: 150px;
             resize: vertical;
         }
-
-        /* Form status message */
+        
         .form-status {
             margin-top: 20px;
             padding: 15px;
             border-radius: 4px;
             display: none;
         }
-
+        
         .form-status.success {
             background-color: rgba(46, 125, 50, 0.2);
             color: #81c784;
             display: block;
         }
-
+        
         .form-status.error {
             background-color: rgba(198, 40, 40, 0.2);
             color: #e57373;
             display: block;
         }
         
-        /* Footer */
         footer {
             text-align: center;
             padding: 20px 0;
@@ -480,7 +470,6 @@
             font-size: 0.9rem;
         }
         
-        /* Responsive Styles */
         @media (max-width: 768px) {
             .section-title {
                 font-size: 2rem;
@@ -526,7 +515,6 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="container">
             <nav>
@@ -546,15 +534,12 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section id="hero">
         <div class="container">
             <div class="hero-content">
                 <h1>Rohit Gaikar</h1>
-                <h2>Cybersecurity Analyst | IAM & PAM Specialist</h2>
-                <p>
-                    Over 3.5 years of hands-on experience in Security Information and Event Management (SIEM), User and Entity Behavior Analytics (UEBA), Identity & Access Management (IAM), and Privileged Access Management (PAM), with a proven track record in implementing secure, scalable, and compliant cybersecurity solutions.
-                </p>
+                <h2>Cybersecurity Engineer | IAM, SIEM & PAM Specialist</h2>
+                <p>Over 4 years of hands-on experience in Security Information and Event Management (SIEM), User and Entity Behavior Analytics (UEBA), Identity & Access Management (IAM), and Privileged Access Management (PAM), with a proven track record in implementing secure, scalable, and compliant cybersecurity solutions for enterprise security and clients delivery.</p>
                 <a href="#contact" class="btn">Get In Touch</a>
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/rohit-gaikar-936500169/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
@@ -565,7 +550,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about">
         <div class="container">
             <h2 class="section-title">About Me</h2>
@@ -597,20 +581,17 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience">
         <div class="container">
             <h2 class="section-title">Experience</h2>
             <div class="experience-tabs">
-                <button class="tab-btn active" data-tab="arcon">ARCON Solutions</button>
+                <button class="tab-btn active" data-tab="arcon">ARCON</button>
                 <button class="tab-btn" data-tab="securonix">Securonix</button>
                 <button class="tab-btn" data-tab="tcs">TCS</button>
             </div>
-
-            <!-- ARCON Solutions -->
             <div class="tab-content active" id="arcon">
                 <h3 class="job-title">Implementation Engineer</h3>
-                <p class="job-company">ARCON Solutions</p>
+                <p class="job-company">ARCON Solution</p>
                 <p class="job-duration">August 2025 - Present</p>
                 <div class="job-description">
                     <ul>
@@ -625,8 +606,6 @@
                     </ul>
                 </div>
             </div>
-
-            <!-- Securonix -->
             <div class="tab-content" id="securonix">
                 <h3 class="job-title">Technical Support Engineer</h3>
                 <p class="job-company">Securonix</p>
@@ -642,45 +621,37 @@
                     </ul>
                 </div>
             </div>
-
-            <!-- TCS -->
             <div class="tab-content" id="tcs">
                 <h3 class="job-title">System Engineer</h3>
                 <p class="job-company">Tata Consultancy Services (Client: Reserve Bank of India DC)</p>
                 <p class="job-duration">September 2021 - June 2024</p>
                 <div class="job-description">
                     <ul>
-                        <li>Led Identity and Access Management (IAM) and Privileged Access Management (PAM) operations, including end-to-end user lifecycle management, role-based access control (RBAC), and multi-factor authentication (MFA) deployment.</li>
-                        <li>Implemented and administered ARCON PAM, including IIS and database configuration, policy setup, and integration with enterprise applications to control and monitor privileged sessions.</li>
-                        <li>Configured and maintained SSO integrations with ARCON PAM for web applications and browsers, leveraging JSON-based configurations and APIs to streamline authentication flows.</li>
-                        <li>Onboarded servers, databases, network devices, and critical applications into ARCON PAM, performing sanity testing and validation to ensure secure and reliable privileged access.</li>
-                        <li>Implemented authentication protocols such as LDAP, SAML, OAuth, WS-Fed, and Kerberos to enhance secure access across enterprise systems.</li>
-                        <li>Handled day-to-day PAM and IAM operations for EMEA clients, communicating effectively with internal teams and external stakeholders to resolve issues and deliver enhancements.</li>
-                        <li>Provided technical support for identity, server, and access-related issues, collaborating with cross-functional teams to deliver timely, compliant solutions.</li>
+                        <li>Led Identity and Access Management (IAM) operations, including end-to-end user lifecycle management (onboarding, offboarding, role modifications), role-based access control (RBAC), and multi-factor authentication (MFA) deployment to enforce security best practices.</li>
+                        <li>Implemented authentication protocols such as LDAP, SAML, OAuth, WS-Fed, and Kerberos, significantly enhancing the organization's security posture.</li>
+                        <li>Integrated and maintained enterprise applications within IAM platforms, ensuring adherence to least privilege principles and compliance with industry standards.</li>
+                        <li>Spearheaded the deployment and support of critical IT infrastructure, facilitating seamless application and data migration across enterprise environments.</li>
+                        <li>Provided technical support for identity, server, and access-related issues, collaborating with cross-functional teams to deliver timely solutions.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Certifications Section -->
     <section id="certifications">
         <div class="container">
             <h2 class="section-title">Certifications</h2>
             <div class="certifications-grid">
-
                 <div class="certification-card">
                     <h3>ARCON | PAM - Administrator</h3>
                     <p>Administrator-level certification in ARCON Privileged Access Management, covering deployment, configuration, and operational management of privileged access environments.</p>
-                    <p class="date">[Month Year]</p>
+                    <p class="date">November 2025</p>
                 </div>
-
                 <div class="certification-card">
                     <h3>ARCON | PAM - Professional</h3>
                     <p>Professional-level certification in ARCON PAM, focusing on advanced policies, integrations, and secure operations for privileged identities and sessions.</p>
-                    <p class="date">[Month Year]</p>
+                    <p class="date">November 2025</p>
                 </div>
-
                 <div class="certification-card">
                     <h3>Unified Defense SIEM (UDS) Cyber Defense Analyst</h3>
                     <p>Securonix SIEM platform in-depth expertise in content management, incident management, and SIEM operations.</p>
@@ -720,7 +691,6 @@
         </div>
     </section>
 
-    <!-- Education Section -->
     <section id="education">
         <div class="container">
             <h2 class="section-title">Education</h2>
@@ -739,7 +709,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
@@ -765,7 +734,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <p>Designed &amp; Built by Rohit Gaikar</p>
@@ -773,17 +741,14 @@
     </footer>
 
     <script>
-        // Mobile Menu Toggle
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const navLinks = document.querySelector('.nav-links');
         
         mobileMenuBtn.addEventListener('click', () => {
             navLinks.classList.toggle('active');
-            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') ? 
-                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
         });
         
-        // Close mobile menu when clicking on a link
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
@@ -791,31 +756,25 @@
             });
         });
         
-        // Experience Tabs
         const tabBtns = document.querySelectorAll('.tab-btn');
         const tabContents = document.querySelectorAll('.tab-content');
         
         tabBtns.forEach(btn => {
             btn.addEventListener('click', () => {
                 const tabId = btn.getAttribute('data-tab');
-                
                 tabBtns.forEach(b => b.classList.remove('active'));
                 tabContents.forEach(content => content.classList.remove('active'));
-                
                 btn.classList.add('active');
                 document.getElementById(tabId).classList.add('active');
             });
         });
         
-        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-                
                 const targetId = this.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
                 if (!targetElement) return;
-                
                 window.scrollTo({
                     top: targetElement.offsetTop - 80,
                     behavior: 'smooth'
@@ -823,22 +782,18 @@
             });
         });
         
-        // Form submission with email functionality (pattern inspired by typical Fetch + JSON forms) [web:4][web:20]
         const contactForm = document.getElementById('contactForm');
         const formStatus = document.getElementById('formStatus');
         
         if (contactForm) {
             contactForm.addEventListener('submit', function(e) {
                 e.preventDefault();
-                
                 const name = document.getElementById('name').value;
                 const email = document.getElementById('email').value;
                 const message = document.getElementById('message').value;
-                
                 formStatus.textContent = 'Sending message...';
                 formStatus.className = 'form-status';
                 formStatus.style.display = 'block';
-                
                 fetch('https://formspree.io/f/myzjyznl', {
                     method: 'POST',
                     headers: {
@@ -869,28 +824,25 @@
                 });
             });
         }
-
-        // Add animation on scroll (common simple intersection-style reveal pattern) [web:18]
+        
         const animateOnScroll = () => {
             const elements = document.querySelectorAll('section, .certification-card, .education-item');
-            
             elements.forEach(element => {
                 const elementPosition = element.getBoundingClientRect().top;
                 const windowHeight = window.innerHeight;
-                
                 if (elementPosition < windowHeight - 100) {
                     element.style.opacity = '1';
                     element.style.transform = 'translateY(0)';
                 }
             });
         };
-
+        
         document.querySelectorAll('section, .certification-card, .education-item').forEach(element => {
             element.style.opacity = '0';
             element.style.transform = 'translateY(20px)';
             element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         });
-
+        
         window.addEventListener('load', animateOnScroll);
         window.addEventListener('scroll', animateOnScroll);
     </script>
